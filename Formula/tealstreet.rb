@@ -10,20 +10,20 @@ class Tealstreet < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Tealstreet/cli/releases/download/v#{version}/tealstreet-darwin-arm64"
-      sha256 "REPLACE_WITH_SHA256_DARWIN_ARM64"
+      sha256 "eae8d902283ea2c61adcca0005b90cde4a7d9b61e034c118b8db5f4cedbbc841"
     else
       url "https://github.com/Tealstreet/cli/releases/download/v#{version}/tealstreet-darwin-x64"
-      sha256 "REPLACE_WITH_SHA256_DARWIN_X64"
+      sha256 "d7d89e556ed4970abc16130f6e4d84acfc840e1ca78d6f7416e3ae9629ab74f6"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Tealstreet/cli/releases/download/v#{version}/tealstreet-linux-arm64"
-      sha256 "REPLACE_WITH_SHA256_LINUX_ARM64"
+      sha256 "8e6e3fa1fad32ede104dda14bc49afac3ff6e8e4f0034100ba1fda167a2fff61"
     else
       url "https://github.com/Tealstreet/cli/releases/download/v#{version}/tealstreet-linux-x64"
-      sha256 "REPLACE_WITH_SHA256_LINUX_X64"
+      sha256 "05837daa52e97ed747bc3da7b0e6e1a28569701b524fc8ca86e4bb99dc48418e"
     end
   end
 
