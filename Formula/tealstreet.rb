@@ -4,26 +4,26 @@
 class Tealstreet < Formula
   desc "Trade crypto from your terminal - Tealstreet CLI"
   homepage "https://tealstreet.io"
-  version "0.3.11"
+  version "0.3.15"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Tealstreet/cli/releases/download/v#{version}/tealstreet-darwin-arm64"
-      sha256 "eae8d902283ea2c61adcca0005b90cde4a7d9b61e034c118b8db5f4cedbbc841"
+      sha256 "f700925bc9b75678f2eca51c9a6c7a03d18c10e2eecd7e36b16b088605c3bc78"
     else
       url "https://github.com/Tealstreet/cli/releases/download/v#{version}/tealstreet-darwin-x64"
-      sha256 "d7d89e556ed4970abc16130f6e4d84acfc840e1ca78d6f7416e3ae9629ab74f6"
+      sha256 "82c44d86c4d79f5c81302ed55b34370805753159ffff7812f105163372f708f7"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Tealstreet/cli/releases/download/v#{version}/tealstreet-linux-arm64"
-      sha256 "8e6e3fa1fad32ede104dda14bc49afac3ff6e8e4f0034100ba1fda167a2fff61"
+      sha256 "050525b360c5096c01f1c700c09f7449373c18540ce8dc81efe1ed78533e8987"
     else
       url "https://github.com/Tealstreet/cli/releases/download/v#{version}/tealstreet-linux-x64"
-      sha256 "05837daa52e97ed747bc3da7b0e6e1a28569701b524fc8ca86e4bb99dc48418e"
+      sha256 "e5ea78d3ad23d0ca2adea41e641737c4179184ab58c7eefe4eb62b6513731b2f"
     end
   end
 
